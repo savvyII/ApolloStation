@@ -260,15 +260,7 @@
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "garm"
 	item_state = "garm"
-//////Haldreithen(Callmanfok) coat
-/obj/item/clothing/suit/storage/toggle/labcoat/fluff/haldreithen
-	name = "atmospheric specialist labcoat"
-	desc = "A labcoat designed for Atmospheric Specialists given to Dra'Krasha Njarir'Akhan as a gift for his long and good service."
-	icon = 'icons/obj/custom_items.dmi'
-	icon_state = "callmanfok"
-	item_state = "callmanfok"
-	icon_open = "callmanfok_open"
-	icon_closed = "callmanfok"
+
 
 //////Haldreithen pipe
 /obj/item/clothing/mask/cigarette/pipe/fluff/haldreithen
@@ -295,3 +287,26 @@
  	icon = 'icons/obj/clothing/masks.dmi'
  	icon_state = "plaguedoctor"
  	item_state = "plaguedoctor"
+
+//////Rylana Steelclaw Advanced PDA
+/obj/item/device/pda/fluff/rylanasteelclaw
+	icon_state = "fluff-pda"
+	desc = "A custom PDA with two screens. It seems rather advanced and has a golden plaque on the top, displaying the owner's first and last name."
+
+/obj/item/device/pda/fluff/rylanasteelclaw/update_icon()
+	..()
+
+	overlays.Cut()
+	if(new_message || new_news)
+		overlays += image('icons/obj/pda.dmi', "fluff-pda-r")
+
+/obj/item/device/pda/fluff/rylanasteelclaw/generateName()
+	name = "Advanced PDA-[owner] ([ownjob])"
+
+/////Haldreithen Formal Uniform
+/obj/item/clothing/under/captainformal/fluff/haldreihen
+	name = "Qilxuq's formal uniform"
+	desc = "A formal uniform given to Qilxuq Xuqm for her good service. There is a short message thanking her for her good service embroided in one of the sleeves"
+	icon = 'icons/obj/clothing/uniforms.dmi'
+	icon_state = "captain_formal"
+	item_state = "captain_formal"
