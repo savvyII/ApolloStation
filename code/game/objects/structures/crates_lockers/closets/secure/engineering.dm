@@ -19,10 +19,6 @@
 			new /obj/item/clothing/tie/storage/brown_vest(src)
 		else
 			new /obj/item/clothing/tie/storage/webbing(src)
-		if(prob(50))
-			new /obj/item/clothing/suit/storage/toggle/labcoat/wintercoat/atmospherics(src)
-		else
-			new /obj/item/clothing/suit/storage/toggle/labcoat/wintercoat/engineering(src)
 		new /obj/item/blueprints(src)
 		new /obj/item/clothing/under/rank/chief_engineer(src)
 		new /obj/item/clothing/head/hardhat/white(src)
@@ -120,7 +116,6 @@
 		new /obj/item/weapon/storage/toolbox/mechanical(src)
 		new /obj/item/device/radio/headset/headset_eng(src)
 		new /obj/item/clothing/suit/storage/hazardvest(src)
-		new /obj/item/clothing/suit/storage/toggle/labcoat/wintercoat/engineering(src)
 		new /obj/item/clothing/mask/gas(src)
 		new /obj/item/clothing/glasses/meson(src)
 		new /obj/item/weapon/cartridge/engineering(src)
@@ -152,7 +147,6 @@
 		new /obj/item/weapon/extinguisher(src)
 		new /obj/item/device/radio/headset/headset_eng(src)
 		new /obj/item/clothing/suit/storage/hazardvest(src)
-		new /obj/item/clothing/suit/storage/toggle/labcoat/wintercoat/atmospherics(src)
 		new /obj/item/clothing/mask/gas(src)
 		new /obj/item/weapon/cartridge/atmos(src)
 		new /obj/item/taperoll/engineering(src)
